@@ -1,4 +1,4 @@
-export const abi = [
+export const StableSwapCompound = [
   {
     name: "TokenExchange",
     inputs: [
@@ -812,4 +812,3 @@ export const abi = [
     gas: 2351,
   },
 ];
-export const address = "0x122036B394A67fE1F01d9b46789fbfAC00DE6071";
