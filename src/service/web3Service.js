@@ -65,6 +65,7 @@ export const approve = async (tokenAddress, pAmount) => {
   const from = await getDefaultAccount();
   await contract.methods
     .approve(StableSwapCompoundAddress, amount)
+    .send({ from: from })
     .then(async (logs) => {
       console.log("Approve: " + logs.transactionHash);
     });
